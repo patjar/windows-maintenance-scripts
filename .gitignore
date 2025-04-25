@@ -1,0 +1,35 @@
+# PowerShell Project .gitignore
+
+# PowerShell module files
+*.psd1
+*.psm1
+
+# Compiled module
+*.dll
+
+# Log files
+*.log
+maintenance_logs/
+*_lastrun
+optimize_history.log
+
+# Temporary files
+*~
+*.bak
+*.tmp
+*.swp
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# VS Code settings
+.vscode/
+
+# PowerShell Studio files
+*.pssproj
+*.pssln
+
+# Debug files
+*.dbg
+

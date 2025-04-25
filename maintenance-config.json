@@ -1,0 +1,66 @@
+{
+  "General": {
+    "Version": "1.0",
+    "LogPath": "$env:USERPROFILE\\maintenance_logs",
+    "NotificationsEnabled": true,
+    "MaxLogSizeMB": 10,
+    "MaxLogAgeInDays": 30,
+    "CreateSystemRestorePoint": false
+  },
+  "Schedule": {
+    "EnableAutoRun": true,
+    "RunDailyAt": "22:00",
+    "RunWeeklyDay": "Sunday",
+    "RunWeeklyAt": "20:00",
+    "SkipIfOnBattery": true,
+    "WakeToRun": false
+  },
+  "Optimization": {
+    "CleanTemporaryFiles": true,
+    "OptimizeBrowserProcesses": true,
+    "ConfigureBrowserSettings": true,
+    "ClearBrowserCache": true,
+    "DisableStartupItems": false,
+    "OptimizeMemory": true,
+    "CleanBrowserHistory": false,
+    "SafeMode": true
+  },
+  "Updates": {
+    "CheckWindowsUpdates": true,
+    "CheckStoreAppUpdates": true,
+    "CheckBrowserUpdates": true,
+    "InstallUpdates": false,
+    "RestartAfterUpdates": false
+  },
+  "BrowserOptimizations": {
+    "EdgeSettings": {
+      "EnableMemorySaver": true,
+      "EnableSleepingTabs": true,
+      "DisablePreloading": true,
+      "InactiveTabTimeout": 15
+    },
+    "ChromeSettings": {
+      "EnableMemorySaver": true,
+      "TabDiscardTimeout": 30
+    }
+  },
+  "Advanced": {
+    "BackgroundProcessMaxCPU": 5,
+    "MaximumOptimizableProcesses": 10,
+    "ProcessAnalysisDepth": "Medium",
+    "MemoryThresholdPercentage": 80,
+    "IgnoredProcesses": [
+      "explorer.exe",
+      "RuntimeBroker.exe",
+      "ShellExperienceHost.exe",
+      "SecurityHealthSystray.exe"
+    ],
+    "CriticalBrowserProcesses": [
+      "gpu",
+      "crashpad",
+      "notification",
+      "utility"
+    ]
+  }
+}
+
